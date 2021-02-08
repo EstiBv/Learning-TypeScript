@@ -16,6 +16,11 @@ let lenguajes: Array<string> = ["JS", "jQuery", "TS"];
 // --Otra manera de declarar
 let years: Number[] = [10, 20, 30];
 let things: any[] = [10, "20"];
+
+// Multiples datos
+let both: string | number = "esti";
+both = 30;
+
 console.log(
   cadena,
   numero,
@@ -23,5 +28,11 @@ console.log(
   cualquiera,
   lenguajes,
   years,
-  things
+  things,
+  both
 );
+
+// declarar tipos de datos
+type alphanumeric = string | number;
+let nameUser: alphanumeric = "Falopia";
+let ageUser: alphanumeric = 20;

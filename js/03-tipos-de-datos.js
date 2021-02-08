@@ -13,4 +13,9 @@ var lenguajes = ["JS", "jQuery", "TS"];
 // --Otra manera de declarar
 var years = [10, 20, 30];
 var things = [10, "20"];
-console.log(cadena, numero, verdadero_falso, cualquiera, lenguajes, years, things);
+// Multiples datos
+var both = "esti";
+both = 30;
+console.log(cadena, numero, verdadero_falso, cualquiera, lenguajes, years, things, both);
+var nameUser = "Falopia";
+var ageUser = 20;
