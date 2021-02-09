@@ -1,5 +1,4 @@
-// Clase (estructura del objeto)
-
+// CLASE (estructura del objeto)
 class Camiseta {
   /* Propiedades (características) . Atributo public. indica la visibilidad de esa variable que pertenece a la estructura del objeto. 
   
@@ -17,8 +16,9 @@ class Camiseta {
   public size: string = "small";
   public price: number = 22;
 
-  // Métodos (acciones del objeto)
+  /* MÉTODO (acciones del objeto (-> ver Pantalón) donde está tambien el CONSTRUCTOR (-> ver Bufanda))*/
 }
+
 var camiseta = new Camiseta();
 
 camiseta.color = "black";
@@ -70,3 +70,47 @@ pantalon2.getBrand();
 console.log(pantalon);
 console.log(pantalon2);
 console.log(pantalon2.getBrand());
+
+// -----------------------------
+
+class Bufanda {
+  private color: string;
+  private features: string;
+  private brand: string;
+  private size: number | string;
+  private price: number;
+
+  /* CONSTRUCTOR : método *especial dentro de una clase
+1- dar valor inicial a los atributos/props
+2-es el primero que se ejecuta
+3- recibe parametros y estos se pasan (como props)
+4- no retona 
+*/
+  constructor(
+    color: string,
+    features: string,
+    brand: string,
+    size: number | string,
+    price: number
+  ) {
+    this.color = color;
+    this.features = features;
+    this.brand = brand;
+    this.size = size;
+    this.price = price;
+  }
+  public setFeatures(features: string) {
+    this.features = features;
+  }
+
+  public getPrize() {
+    return this.price;
+  }
+}
+
+let bufanda = new Bufanda("pink", "polyester", "pull&bear", "unique", 12);
+console.log(bufanda);
+console.log(bufanda.getPrize());
+
+bufanda.setFeatures("cottons");
+console.log(bufanda);

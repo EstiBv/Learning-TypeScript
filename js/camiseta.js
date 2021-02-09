@@ -1,5 +1,5 @@
 "use strict";
-// Clase (estructura del objeto)
+// CLASE (estructura del objeto)
 var Camiseta = /** @class */ (function () {
     function Camiseta() {
         /* Propiedades (características) . Atributo public. indica la visibilidad de esa variable que pertenece a la estructura del objeto.
@@ -16,7 +16,7 @@ var Camiseta = /** @class */ (function () {
         this.brand = "nike";
         this.size = "small";
         this.price = 22;
-        // Métodos (acciones del objeto)
+        /* MÉTODO (acciones del objeto (-> ver Pantalón) donde está tambien el CONSTRUCTOR (-> ver Bufanda))*/
     }
     return Camiseta;
 }());
@@ -64,3 +64,31 @@ pantalon2.getBrand();
 console.log(pantalon);
 console.log(pantalon2);
 console.log(pantalon2.getBrand());
+// -----------------------------
+var Bufanda = /** @class */ (function () {
+    /* CONSTRUCTOR : método *especial dentro de una clase
+  1- dar valor inicial a los atributos/props
+  2-es el primero que se ejecuta
+  3- recibe parametros y estos se pasan (como props)
+  4- no retona
+  */
+    function Bufanda(color, features, brand, size, price) {
+        this.color = color;
+        this.features = features;
+        this.brand = brand;
+        this.size = size;
+        this.price = price;
+    }
+    Bufanda.prototype.setFeatures = function (features) {
+        this.features = features;
+    };
+    Bufanda.prototype.getPrize = function () {
+        return this.price;
+    };
+    return Bufanda;
+}());
+var bufanda = new Bufanda("pink", "polyester", "pull&bear", "unique", 12);
+console.log(bufanda);
+console.log(bufanda.getPrize());
+bufanda.setFeatures("cottons");
+console.log(bufanda);
