@@ -37,8 +37,6 @@ zapatilla.price = 47.9;
 
 console.log(camiseta, zapatilla);
 
-// ---------------------------
-
 class Pantalon {
   private color: string = "blue";
   private features: string = "large";

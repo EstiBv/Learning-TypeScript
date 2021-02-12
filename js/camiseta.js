@@ -33,7 +33,6 @@ zapatilla.brand = "adidas";
 zapatilla.size = "38";
 zapatilla.price = 47.9;
 console.log(camiseta, zapatilla);
-// ---------------------------
 var Pantalon = /** @class */ (function () {
     function Pantalon() {
         this.color = "blue";
