@@ -2,7 +2,7 @@
 // CLASE (estructura del objeto)
 var Camiseta = /** @class */ (function () {
     function Camiseta() {
-        /* Propiedades (características) . Atributo public. indica la visibilidad de esa variable que pertenece a la estructura del objeto.
+        /* Propiedades (características) . Atributo public. Indica la visibilidad de esa variable que pertenece a la estructura del objeto.
         
         Cuando se instacie el objeto ( var Camiseta = new Camiseta()), se pueden modificar las características porque son publics
       
